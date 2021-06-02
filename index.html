@@ -1,16 +1,50 @@
-<!DOCTYPE html>
-<html>
+<link
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+<link href="styles.css" rel="stylesheet" />
 
-<head>
-	<title>Parcel Sandbox</title>
-	<meta charset="UTF-8" />
-</head>
+<form class="p-3">
+  <div class="form-group">
+    <label for="name">Input name</label>
+    <input type="text" class="form-control" id="name" />
+  </div>
+  <div class="form-group">
+    <label for="cardNumber">card number</label>
+    <input type="text" class="form-control" id="cardNumber" />
+    <!-- <select class="form-control" id="seeAnotherField">
+      <option value="no">No Way.</option>
+      <option value="yes">Absolutely!</option>
+    </select> -->
+  </div>
+  <div class="form-group" id="expiryDateDiv">
+    <label for="expiryDate">expiry date</label>
+    <input type="text" class="form-control" id="expiryDate" />
+  </div>
+  <div class="form-group" id="cmndDiv">
+    <label for="cmnd">enter cmnd</label>
+    <input type="text" class="form-control" id="cmnd" />
+  </div>
+  <div class="form-group" id="otherFieldGroupDiv">
+    <div class="row">
+      <div class="col-6">
+        <label for="otherField1">cvv</label>
+        <input type="text" class="form-control w-100" id="otherField1" />
+      </div>
+      <div class="col-6">
+        <label for="otherField2">other</label>
+        <input type="text" class="form-control w-100" id="otherField2" />
+      </div>
+    </div>
+  </div>
+  <!-- <div class="form-group">
+    <label for="comments">Comments/Questions</label>
+    <textarea class="form-control" id="comments" rows="3"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  -->
+</form>
 
-<body>
-	<div id="app"></div>
-
-	<script src="src/index.js">
-	</script>
-</body>
-
-</html>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+<script src="index.js"></script>
