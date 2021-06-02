@@ -1,6 +1,13 @@
 import "./styles.css";
 
-$("#cardNumber").change(function () {
+$("#name").blur(function () {
+  if ($(this).val().indexOf(" ") > -1) {
+  } else {
+    window.alert("Tên phải có dấu cách");
+  }
+});
+
+$("#name").change(function () {
   if ($(this).val() === "") {
     $("#expiryDateDiv").hide();
     $("#expiryDate").removeAttr("required");
@@ -11,7 +18,7 @@ $("#cardNumber").change(function () {
     //$("#otherField").attr("data-error", "This field is required.");
   }
 });
-$("#cardNumber").trigger("change");
+$("#name").trigger("change");
 
 $("#expiryDate").change(function () {
   if ($(this).val() === "") {
