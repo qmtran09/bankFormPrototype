@@ -9,18 +9,18 @@ $("#name").blur(function () {
 
 $("#name").change(function () {
   if ($(this).val() === "") {
-    $("#expiryDateDiv").hide();
-    $("#expiryDate").removeAttr("required");
-    $("#expiryDate").removeAttr("data-error");
+    $("#expiryDiv").hide();
+    // $("#expiryDate").removeAttr("required");
+    // $("#expiryDate").removeAttr("data-error");
   } else {
-    $("#expiryDateDiv").show();
+    $("#expiryDiv").show();
     // $("#expiryDate").attr("required", "");
     //$("#otherField").attr("data-error", "This field is required.");
   }
 });
 $("#name").trigger("change");
 
-$("#expiryDate").change(function () {
+$("#monthPicker").change(function () {
   if ($(this).val() === "") {
     $("#cmndDiv").hide();
     //$("#cmnd").removeAttr("required");
@@ -31,7 +31,7 @@ $("#expiryDate").change(function () {
     //$("#otherField").attr("data-error", "This field is required.");
   }
 });
-$("#expiryDate").trigger("change");
+$("#monthPicker").trigger("change");
 
 $("#cmnd").change(function () {
   if ($(this).val() == "") {
